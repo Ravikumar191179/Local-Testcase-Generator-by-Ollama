@@ -27,5 +27,5 @@ def generate():
     return jsonify(result)
 
 if __name__ == '__main__':
-    print("🚀 Starting Local Testcase Generator on http://localhost:5001")
+    print("🚀 Starting Testcase Generator on http://localhost:5001")
     app.run(host='0.0.0.0', port=5001, debug=True)

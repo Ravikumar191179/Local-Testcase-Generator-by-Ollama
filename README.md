@@ -1,4 +1,4 @@
-# AITester - Local LLM Testcase Generator
+# AITester - Testcase Generator
 
 A premium, privacy-focused tool to generate comprehensive test suites (Unit & Integration) using local LLMs through Ollama. Built with the **B.L.A.S.T** protocol and **A.N.T 3-layer architecture**.
 
