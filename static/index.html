@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AITester - Local Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-glow"></div>
+    
+    <div class="app-container">
+        <header>
+            <div class="logo">🚀 AITester <span class="badge">BETA</span></div>
+            <div class="status-indicator">
+                <span class="dot"></span> Ollama: Connected
+            </div>
+        </header>
+
+        <main>
+            <div class="input-panel glass-panel">
+                <h2>Input Context</h2>
+                <div class="controls">
+                    <select id="templateDocs">
+                        <option value="unit">Unit Tests (Pytest)</option>
+                        <option value="integration">Integration Tests</option>
+                    </select>
+                </div>
+                <textarea id="userInput" placeholder="Paste your code or logic here... e.g. 'def calculate_total(price, tax): return price * (1 + tax)'"></textarea>
+                <div class="actions">
+                    <button id="generateBtn" class="primary-btn">
+                        <span class="btn-text">Generate Tests</span>
+                        <div class="spinner secondary"></div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="output-panel glass-panel">
+                <div class="output-header">
+                    <h2>Generated Suite</h2>
+                    <button class="icon-btn" id="copyBtn" title="Copy Code">📋</button>
+                </div>
+                <div class="code-editor-look">
+                    <pre><code id="outputCode" class="language-python"># Generated tests will appear here...</code></pre>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
