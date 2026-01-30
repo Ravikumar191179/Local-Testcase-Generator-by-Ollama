@@ -32,6 +32,9 @@ graph TD
     JS --> UI
 ```
 
+## 🖥 Application Interface
+![AITester Interface](images/app_interface.png)
+
 ## ✨ Features
 - **Deterministic Code Generation**: Uses low-temperature settings for reliable output.
 - **Glassmorphic UI**: High-end dark mode aesthetics with real-time status indicators.
